@@ -1,5 +1,7 @@
 <resources>
+    <!--General-->
     <string name="app_name">TheVexillologist</string>
+    <!--Main Activity-->
     <string name="welcome">WELCOME</string>
     <string name="name_hint">ENTER YOUR NAME</string>
     <string name="start">START</string>
@@ -9,4 +11,7 @@
     <string name="fifty_questions">50 Questions</string>
     <string name="seventy_five_questions">75 Questions</string>
     <string name="hundred_questions">100 Questions</string>
+    <!--Quiz Questions Activity-->
+    <string name="identify">Identify the flag</string>
+    <string name="submit">SUBMIT</string>
 </resources>
