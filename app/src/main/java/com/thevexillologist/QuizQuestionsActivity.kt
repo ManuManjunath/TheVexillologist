@@ -6,7 +6,7 @@ import android.util.Log
 
 class QuizQuestionsActivity : AppCompatActivity() {
 
-    private var mQuestionsList: ArrayList<Question>? = null
+    private var mQuestionsList: ArrayList<QuestionAnswer>? = null
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAns: Int = 0
 
@@ -18,5 +18,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         if (questionsCount != null) {
             Log.i("QuizQuestionsActivity", questionsCount)
         }
+
+
     }
 }
