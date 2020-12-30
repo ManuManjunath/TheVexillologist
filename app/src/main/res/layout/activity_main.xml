@@ -12,24 +12,21 @@
         android:id="@+id/iv_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/logo_the_vexillologist"
-        android:layout_margin="16dp"
-        />
-    
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/iv_logo"
-        android:layout_centerInParent="true"
-        android:background="@color/colorPrimaryDark"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
 
         <LinearLayout
             android:id="@+id/ll_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
             android:background="@color/colorPrimaryDark"
             android:orientation="vertical">
 
@@ -44,34 +41,92 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"/>
 
-            <EditText
-                android:id="@+id/et_name"
+            <RadioGroup
+                android:id="@+id/rg_questions"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/name_hint"
-                android:textColor="@color/colorAccent"
-                android:textColorHint="@color/colorPrimary"
-                android:gravity="center"
-                />
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="25dp"
+                android:layout_weight="1">
 
-            <Button
-                android:id="@+id/btn_start"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/colorAccent"
-                android:text="@string/start"
-                android:layout_gravity="center"
-                />
+                <RadioButton
+                    android:id="@+id/rb_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_questions"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="20dp"
+                    android:buttonTint="@color/colorAccent"/>
 
+                <RadioButton
+                    android:id="@+id/rb_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twenty_five_questions"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="20dp"
+                    android:buttonTint="@color/colorAccent"/>
 
+                <RadioButton
+                    android:id="@+id/rb_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifty_questions"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="20dp"
+                    android:buttonTint="@color/colorAccent"/>
+
+                <RadioButton
+                    android:id="@+id/rb_75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seventy_five_questions"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="20dp"
+                    android:buttonTint="@color/colorAccent"/>
+
+                <RadioButton
+                    android:id="@+id/rb_100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hundred_questions"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="20dp"
+                    android:buttonTint="@color/colorAccent"/>
+            </RadioGroup>
         </LinearLayout>
 
-
-
-    </androidx.cardview.widget.CardView>
-
-
-
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_card"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="@string/start"
+        />
 </RelativeLayout>

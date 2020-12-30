@@ -3,9 +3,11 @@ package com.thevexillologist
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class InputParametersActivity : AppCompatActivity() {
+class QuizQuestionsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_input_parameters)
+        setContentView(R.layout.activity_quiz_questions)
+
+        var questionsCount = intent.getStringExtra(Constants.TOTAL_QUESTIONS)
     }
 }
